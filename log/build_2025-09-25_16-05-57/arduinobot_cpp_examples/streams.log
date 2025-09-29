@@ -1,0 +1,26 @@
+[0.066s] Invoking command in '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aldo/arduinobot_ws/build/arduinobot_cpp_examples -- -j2 -l2
+[0.419s] [ 33%] Built target simple_publisher
+[0.929s] [ 66%] Built target simple_subscriber
+[1.150s] [100%] Built target simple_parameter
+[1.218s] Invoked command in '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aldo/arduinobot_ws/build/arduinobot_cpp_examples -- -j2 -l2
+[1.221s] Invoking command in '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aldo/arduinobot_ws/build/arduinobot_cpp_examples
+[1.281s] -- Install configuration: ""
+[1.283s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher
+[1.284s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber
+[1.284s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_parameter
+[1.284s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples
+[1.287s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples
+[1.290s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh
+[1.290s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv
+[1.301s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh
+[1.308s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv
+[1.309s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash
+[1.316s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh
+[1.318s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh
+[1.333s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv
+[1.333s] -- Installing: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv
+[1.333s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples
+[1.335s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake
+[1.335s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake
+[1.335s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml
+[1.336s] Invoked command in '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aldo/arduinobot_ws/build/arduinobot_cpp_examples

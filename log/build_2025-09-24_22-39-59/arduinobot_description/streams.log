@@ -1,0 +1,42 @@
+[0.708s] Invoking command in '/home/aldo/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aldo/arduinobot_ws/build/arduinobot_description -- -j4 -l4
+[2.368s] Invoked command in '/home/aldo/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aldo/arduinobot_ws/build/arduinobot_description -- -j4 -l4
+[2.684s] Invoking command in '/home/aldo/arduinobot_ws/build/arduinobot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aldo/arduinobot_ws/build/arduinobot_description
+[3.036s] -- Install configuration: ""
+[3.036s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/servo_plate.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/plate.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/forward_drive_arm.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/drive_gear.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/horizontal_arm.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/claw_support.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/triangular_link.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/base_plate.STL
+[3.037s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/round_plate.STL
+[3.038s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/left_finger.STL
+[3.038s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/link.STL
+[3.038s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/basement.STL
+[3.038s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/right_finger.STL
+[3.042s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/vertical_drive_arm.STL
+[3.104s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/meshes/driven_gear.STL
+[3.104s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf
+[3.104s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/urdf/arduinobot.urdf.xacro
+[3.104s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch
+[3.104s] -- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/launch/display.launch.py
+[3.105s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/rviz
+[3.105s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/rviz/display.rviz
+[3.105s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description
+[3.106s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description
+[3.106s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh
+[3.106s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv
+[3.106s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.sh
+[3.107s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.dsv
+[3.107s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.bash
+[3.107s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.sh
+[3.107s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.zsh
+[3.110s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.dsv
+[3.111s] -- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.dsv
+[3.112s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description
+[3.112s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake
+[3.112s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake
+[3.112s] -- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.xml
+[3.118s] Invoked command in '/home/aldo/arduinobot_ws/build/arduinobot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aldo/arduinobot_ws/build/arduinobot_description

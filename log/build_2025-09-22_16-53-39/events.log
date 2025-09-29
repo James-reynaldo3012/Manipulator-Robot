@@ -1,0 +1,718 @@
+[0.000000] (-) TimerEvent: {}
+[0.000408] (arduinobot_cpp_examples) JobQueued: {'identifier': 'arduinobot_cpp_examples', 'dependencies': OrderedDict()}
+[0.003137] (arduinobot_description) JobQueued: {'identifier': 'arduinobot_description', 'dependencies': OrderedDict()}
+[0.003360] (arduinobot_cpp_examples) JobStarted: {'identifier': 'arduinobot_cpp_examples'}
+[0.098755] (arduinobot_description) JobStarted: {'identifier': 'arduinobot_description'}
+[0.098962] (-) TimerEvent: {}
+[0.205130] (-) TimerEvent: {}
+[0.212388] (arduinobot_description) JobProgress: {'identifier': 'arduinobot_description', 'progress': 'cmake'}
+[0.213548] (arduinobot_description) Command: {'cmd': ['/usr/bin/cmake', '/home/aldo/arduinobot_ws/src/arduinobot_description', '-DCMAKE_INSTALL_PREFIX=/home/aldo/arduinobot_ws/install/arduinobot_description'], 'cwd': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aldo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aldo', 'OLDPWD': '/home/aldo/arduinobot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3642', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aldo/arduinobot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aldo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aldo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aldo-VirtualBox:@/tmp/.ICE-unix/3469,unix/aldo-VirtualBox:/tmp/.ICE-unix/3469', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/77bf08ea_688a_486b_8e67_938736b9ae35', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J4DSD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.144', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.331606] (-) TimerEvent: {}
+[0.361508] (arduinobot_cpp_examples) JobProgress: {'identifier': 'arduinobot_cpp_examples', 'progress': 'cmake'}
+[0.441243] (arduinobot_cpp_examples) JobProgress: {'identifier': 'arduinobot_cpp_examples', 'progress': 'build'}
+[0.441410] (-) TimerEvent: {}
+[0.538189] (arduinobot_cpp_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples', '--', '-j4', '-l4'], 'cwd': '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aldo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aldo', 'OLDPWD': '/home/aldo/arduinobot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3642', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aldo/arduinobot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aldo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aldo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aldo-VirtualBox:@/tmp/.ICE-unix/3469,unix/aldo-VirtualBox:/tmp/.ICE-unix/3469', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/77bf08ea_688a_486b_8e67_938736b9ae35', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J4DSD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.144', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.684224] (-) TimerEvent: {}
+[0.788695] (-) TimerEvent: {}
+[0.898030] (-) TimerEvent: {}
+[1.056445] (-) TimerEvent: {}
+[1.191865] (-) TimerEvent: {}
+[1.292474] (-) TimerEvent: {}
+[1.404088] (-) TimerEvent: {}
+[1.595773] (-) TimerEvent: {}
+[1.719123] (-) TimerEvent: {}
+[1.889390] (-) TimerEvent: {}
+[2.020579] (-) TimerEvent: {}
+[2.140412] (-) TimerEvent: {}
+[2.308283] (-) TimerEvent: {}
+[2.506127] (-) TimerEvent: {}
+[2.676715] (-) TimerEvent: {}
+[2.841273] (-) TimerEvent: {}
+[2.967487] (-) TimerEvent: {}
+[3.307338] (-) TimerEvent: {}
+[3.429644] (-) TimerEvent: {}
+[3.717551] (-) TimerEvent: {}
+[3.955937] (-) TimerEvent: {}
+[4.137444] (arduinobot_cpp_examples) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/simple_subscriber.dir/src/simple_subscriber.cpp.o\x1b[0m\n'}
+[4.137766] (-) TimerEvent: {}
+[4.241149] (-) TimerEvent: {}
+[4.343987] (arduinobot_cpp_examples) StdoutLine: {'line': b'[ 75%] Built target simple_publisher\n'}
+[4.376768] (-) TimerEvent: {}
+[4.515691] (-) TimerEvent: {}
+[4.632457] (-) TimerEvent: {}
+[4.819480] (arduinobot_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.819771] (-) TimerEvent: {}
+[4.924639] (-) TimerEvent: {}
+[5.111144] (-) TimerEvent: {}
+[5.244333] (-) TimerEvent: {}
+[5.383714] (-) TimerEvent: {}
+[5.487582] (-) TimerEvent: {}
+[5.616111] (-) TimerEvent: {}
+[5.788455] (-) TimerEvent: {}
+[5.959795] (-) TimerEvent: {}
+[6.140699] (-) TimerEvent: {}
+[6.280786] (-) TimerEvent: {}
+[6.389101] (-) TimerEvent: {}
+[6.497510] (arduinobot_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[6.497950] (-) TimerEvent: {}
+[6.582133] (arduinobot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.806443] (arduinobot_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.806682] (-) TimerEvent: {}
+[6.832661] (arduinobot_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.851072] (arduinobot_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.927419] (-) TimerEvent: {}
+[7.142060] (arduinobot_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.142546] (-) TimerEvent: {}
+[7.264111] (-) TimerEvent: {}
+[7.377726] (-) TimerEvent: {}
+[7.511133] (-) TimerEvent: {}
+[7.613359] (-) TimerEvent: {}
+[7.760606] (arduinobot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.766561] (-) TimerEvent: {}
+[7.906850] (-) TimerEvent: {}
+[8.079344] (-) TimerEvent: {}
+[8.287197] (-) TimerEvent: {}
+[8.508641] (-) TimerEvent: {}
+[8.733801] (-) TimerEvent: {}
+[8.842831] (-) TimerEvent: {}
+[8.952172] (-) TimerEvent: {}
+[9.108392] (-) TimerEvent: {}
+[9.213293] (-) TimerEvent: {}
+[9.338066] (-) TimerEvent: {}
+[9.440091] (-) TimerEvent: {}
+[9.544213] (-) TimerEvent: {}
+[9.662879] (-) TimerEvent: {}
+[9.781722] (-) TimerEvent: {}
+[9.964834] (-) TimerEvent: {}
+[10.234528] (-) TimerEvent: {}
+[10.446963] (-) TimerEvent: {}
+[10.615501] (-) TimerEvent: {}
+[10.833105] (-) TimerEvent: {}
+[10.954510] (-) TimerEvent: {}
+[11.109222] (-) TimerEvent: {}
+[11.285569] (-) TimerEvent: {}
+[11.452580] (-) TimerEvent: {}
+[11.569045] (-) TimerEvent: {}
+[11.671495] (-) TimerEvent: {}
+[11.715900] (arduinobot_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.777759] (-) TimerEvent: {}
+[11.903892] (-) TimerEvent: {}
+[12.021865] (arduinobot_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[12.022151] (-) TimerEvent: {}
+[12.143380] (arduinobot_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[12.352959] (-) TimerEvent: {}
+[12.353128] (arduinobot_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.405169] (arduinobot_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[12.471542] (-) TimerEvent: {}
+[12.594289] (-) TimerEvent: {}
+[12.704117] (-) TimerEvent: {}
+[12.812896] (-) TimerEvent: {}
+[12.921166] (-) TimerEvent: {}
+[13.045892] (-) TimerEvent: {}
+[13.220037] (-) TimerEvent: {}
+[13.400163] (-) TimerEvent: {}
+[13.529287] (-) TimerEvent: {}
+[13.671035] (-) TimerEvent: {}
+[13.856894] (-) TimerEvent: {}
+[13.958121] (-) TimerEvent: {}
+[14.077965] (-) TimerEvent: {}
+[14.250401] (-) TimerEvent: {}
+[14.373478] (-) TimerEvent: {}
+[14.486270] (-) TimerEvent: {}
+[14.607332] (-) TimerEvent: {}
+[14.711972] (-) TimerEvent: {}
+[14.816877] (-) TimerEvent: {}
+[14.948433] (-) TimerEvent: {}
+[15.223445] (-) TimerEvent: {}
+[15.502723] (-) TimerEvent: {}
+[15.620034] (-) TimerEvent: {}
+[16.071282] (-) TimerEvent: {}
+[16.199228] (-) TimerEvent: {}
+[16.326704] (-) TimerEvent: {}
+[16.427711] (-) TimerEvent: {}
+[16.537442] (-) TimerEvent: {}
+[16.786604] (-) TimerEvent: {}
+[16.908916] (-) TimerEvent: {}
+[17.137318] (-) TimerEvent: {}
+[17.261234] (-) TimerEvent: {}
+[17.374039] (-) TimerEvent: {}
+[17.468011] (arduinobot_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[17.474644] (-) TimerEvent: {}
+[17.580927] (-) TimerEvent: {}
+[17.754691] (-) TimerEvent: {}
+[17.902822] (-) TimerEvent: {}
+[18.009399] (-) TimerEvent: {}
+[18.165331] (-) TimerEvent: {}
+[18.292999] (-) TimerEvent: {}
+[18.540516] (-) TimerEvent: {}
+[18.713943] (-) TimerEvent: {}
+[18.875575] (-) TimerEvent: {}
+[19.022896] (-) TimerEvent: {}
+[19.148804] (-) TimerEvent: {}
+[19.275901] (-) TimerEvent: {}
+[19.391867] (-) TimerEvent: {}
+[19.522942] (-) TimerEvent: {}
+[19.656890] (-) TimerEvent: {}
+[19.816637] (-) TimerEvent: {}
+[19.938868] (-) TimerEvent: {}
+[20.039921] (-) TimerEvent: {}
+[20.243695] (-) TimerEvent: {}
+[20.320628] (arduinobot_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[20.358793] (-) TimerEvent: {}
+[20.504114] (-) TimerEvent: {}
+[20.731853] (-) TimerEvent: {}
+[20.865628] (-) TimerEvent: {}
+[20.992625] (-) TimerEvent: {}
+[21.135661] (-) TimerEvent: {}
+[21.275439] (-) TimerEvent: {}
+[21.424514] (-) TimerEvent: {}
+[21.640346] (arduinobot_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[21.640943] (-) TimerEvent: {}
+[21.659368] (arduinobot_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[21.705981] (arduinobot_description) StdoutLine: {'line': b'-- Configuring done (21.2s)\n'}
+[21.755819] (-) TimerEvent: {}
+[21.796949] (arduinobot_description) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[21.860085] (-) TimerEvent: {}
+[21.872448] (arduinobot_description) StdoutLine: {'line': b'-- Build files have been written to: /home/aldo/arduinobot_ws/build/arduinobot_description\n'}
+[22.003072] (arduinobot_description) CommandEnded: {'returncode': 0}
+[22.003573] (-) TimerEvent: {}
+[22.125727] (arduinobot_description) JobProgress: {'identifier': 'arduinobot_description', 'progress': 'build'}
+[22.133740] (-) TimerEvent: {}
+[22.318131] (arduinobot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aldo/arduinobot_ws/build/arduinobot_description', '--', '-j4', '-l4'], 'cwd': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aldo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aldo', 'OLDPWD': '/home/aldo/arduinobot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3642', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aldo/arduinobot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aldo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aldo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aldo-VirtualBox:@/tmp/.ICE-unix/3469,unix/aldo-VirtualBox:/tmp/.ICE-unix/3469', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/77bf08ea_688a_486b_8e67_938736b9ae35', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J4DSD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.144', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[22.321846] (-) TimerEvent: {}
+[22.431393] (-) TimerEvent: {}
+[22.581063] (-) TimerEvent: {}
+[22.727719] (-) TimerEvent: {}
+[22.874909] (-) TimerEvent: {}
+[23.097472] (-) TimerEvent: {}
+[23.259465] (-) TimerEvent: {}
+[23.372705] (-) TimerEvent: {}
+[23.497895] (-) TimerEvent: {}
+[23.725656] (-) TimerEvent: {}
+[23.935956] (-) TimerEvent: {}
+[24.089289] (-) TimerEvent: {}
+[24.212094] (-) TimerEvent: {}
+[24.314300] (-) TimerEvent: {}
+[24.424283] (-) TimerEvent: {}
+[24.558357] (-) TimerEvent: {}
+[24.725031] (-) TimerEvent: {}
+[24.801185] (arduinobot_description) CommandEnded: {'returncode': 0}
+[24.802092] (arduinobot_description) JobProgress: {'identifier': 'arduinobot_description', 'progress': 'install'}
+[24.826492] (-) TimerEvent: {}
+[24.954487] (-) TimerEvent: {}
+[25.187815] (-) TimerEvent: {}
+[25.457119] (arduinobot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aldo/arduinobot_ws/build/arduinobot_description'], 'cwd': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aldo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aldo', 'OLDPWD': '/home/aldo/arduinobot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3642', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aldo/arduinobot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aldo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aldo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aldo-VirtualBox:@/tmp/.ICE-unix/3469,unix/aldo-VirtualBox:/tmp/.ICE-unix/3469', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/77bf08ea_688a_486b_8e67_938736b9ae35', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J4DSD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.144', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aldo/arduinobot_ws/build/arduinobot_description', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[25.570672] (-) TimerEvent: {}
+[25.707490] (-) TimerEvent: {}
+[25.732022] (arduinobot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.758278] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/package_run_dependencies/arduinobot_description\n'}
+[25.875222] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/parent_prefix_path/arduinobot_description\n'}
+[25.889277] (-) TimerEvent: {}
+[25.889663] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.sh\n'}
+[25.890348] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/ament_prefix_path.dsv\n'}
+[25.892539] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.sh\n'}
+[25.892980] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/environment/path.dsv\n'}
+[25.893652] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.bash\n'}
+[25.894021] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.sh\n'}
+[25.894356] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.zsh\n'}
+[25.978352] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/local_setup.dsv\n'}
+[25.978749] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.dsv\n'}
+[25.979014] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/ament_index/resource_index/packages/arduinobot_description\n'}
+[25.979129] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig.cmake\n'}
+[25.979235] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/cmake/arduinobot_descriptionConfig-version.cmake\n'}
+[25.979337] (arduinobot_description) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_description/share/arduinobot_description/package.xml\n'}
+[25.979434] (arduinobot_description) CommandEnded: {'returncode': 0}
+[25.999508] (-) TimerEvent: {}
+[26.135564] (-) TimerEvent: {}
+[26.437860] (-) TimerEvent: {}
+[26.597664] (arduinobot_description) JobEnded: {'identifier': 'arduinobot_description', 'rc': 0}
+[26.608758] (-) TimerEvent: {}
+[26.733378] (-) TimerEvent: {}
+[26.848620] (-) TimerEvent: {}
+[26.965471] (-) TimerEvent: {}
+[27.081676] (-) TimerEvent: {}
+[27.249965] (-) TimerEvent: {}
+[27.361427] (-) TimerEvent: {}
+[27.504712] (-) TimerEvent: {}
+[27.606711] (-) TimerEvent: {}
+[27.729926] (-) TimerEvent: {}
+[27.977503] (-) TimerEvent: {}
+[28.094447] (-) TimerEvent: {}
+[28.214111] (-) TimerEvent: {}
+[28.349862] (-) TimerEvent: {}
+[28.483184] (-) TimerEvent: {}
+[28.604378] (-) TimerEvent: {}
+[28.752876] (-) TimerEvent: {}
+[28.881211] (-) TimerEvent: {}
+[29.019697] (-) TimerEvent: {}
+[29.129767] (-) TimerEvent: {}
+[29.321990] (-) TimerEvent: {}
+[29.431890] (-) TimerEvent: {}
+[29.548520] (-) TimerEvent: {}
+[29.655907] (-) TimerEvent: {}
+[29.773907] (-) TimerEvent: {}
+[29.911268] (-) TimerEvent: {}
+[30.058977] (-) TimerEvent: {}
+[30.167530] (-) TimerEvent: {}
+[30.307901] (-) TimerEvent: {}
+[30.451077] (-) TimerEvent: {}
+[30.557997] (-) TimerEvent: {}
+[30.684479] (-) TimerEvent: {}
+[30.803341] (-) TimerEvent: {}
+[30.944490] (-) TimerEvent: {}
+[31.058803] (-) TimerEvent: {}
+[31.175401] (-) TimerEvent: {}
+[31.305486] (-) TimerEvent: {}
+[31.409894] (-) TimerEvent: {}
+[31.524807] (-) TimerEvent: {}
+[31.661116] (-) TimerEvent: {}
+[31.808864] (-) TimerEvent: {}
+[31.950188] (-) TimerEvent: {}
+[32.052010] (-) TimerEvent: {}
+[32.209088] (-) TimerEvent: {}
+[32.360319] (-) TimerEvent: {}
+[32.485680] (-) TimerEvent: {}
+[32.600882] (-) TimerEvent: {}
+[32.726975] (-) TimerEvent: {}
+[32.851154] (-) TimerEvent: {}
+[32.958226] (-) TimerEvent: {}
+[33.069822] (-) TimerEvent: {}
+[33.194680] (-) TimerEvent: {}
+[33.297677] (-) TimerEvent: {}
+[33.455634] (-) TimerEvent: {}
+[33.558733] (-) TimerEvent: {}
+[33.677287] (-) TimerEvent: {}
+[33.794660] (-) TimerEvent: {}
+[33.929946] (-) TimerEvent: {}
+[34.056747] (-) TimerEvent: {}
+[34.239405] (-) TimerEvent: {}
+[34.350957] (-) TimerEvent: {}
+[34.470909] (-) TimerEvent: {}
+[34.622100] (-) TimerEvent: {}
+[34.731984] (-) TimerEvent: {}
+[34.849465] (-) TimerEvent: {}
+[34.978763] (-) TimerEvent: {}
+[35.097015] (-) TimerEvent: {}
+[35.242223] (-) TimerEvent: {}
+[35.360819] (-) TimerEvent: {}
+[35.464984] (-) TimerEvent: {}
+[35.629237] (-) TimerEvent: {}
+[35.737456] (-) TimerEvent: {}
+[35.846696] (-) TimerEvent: {}
+[35.969908] (-) TimerEvent: {}
+[36.072501] (-) TimerEvent: {}
+[36.183660] (-) TimerEvent: {}
+[36.306471] (-) TimerEvent: {}
+[36.410745] (-) TimerEvent: {}
+[36.536840] (-) TimerEvent: {}
+[36.660773] (-) TimerEvent: {}
+[36.809857] (-) TimerEvent: {}
+[37.025854] (-) TimerEvent: {}
+[37.139253] (-) TimerEvent: {}
+[37.255588] (-) TimerEvent: {}
+[37.357253] (-) TimerEvent: {}
+[37.495314] (-) TimerEvent: {}
+[37.616638] (-) TimerEvent: {}
+[37.788815] (-) TimerEvent: {}
+[37.936517] (-) TimerEvent: {}
+[38.074300] (-) TimerEvent: {}
+[38.204562] (-) TimerEvent: {}
+[38.356349] (-) TimerEvent: {}
+[38.506404] (-) TimerEvent: {}
+[38.747791] (-) TimerEvent: {}
+[38.966261] (-) TimerEvent: {}
+[39.114123] (-) TimerEvent: {}
+[39.226993] (-) TimerEvent: {}
+[39.354036] (-) TimerEvent: {}
+[39.504425] (-) TimerEvent: {}
+[39.627420] (-) TimerEvent: {}
+[39.736990] (-) TimerEvent: {}
+[39.902616] (-) TimerEvent: {}
+[40.017344] (-) TimerEvent: {}
+[40.160326] (-) TimerEvent: {}
+[40.307394] (-) TimerEvent: {}
+[40.412211] (-) TimerEvent: {}
+[40.559446] (-) TimerEvent: {}
+[40.752832] (-) TimerEvent: {}
+[40.880194] (-) TimerEvent: {}
+[41.044969] (-) TimerEvent: {}
+[41.229080] (-) TimerEvent: {}
+[41.360270] (-) TimerEvent: {}
+[41.511104] (-) TimerEvent: {}
+[41.641510] (-) TimerEvent: {}
+[41.860233] (-) TimerEvent: {}
+[42.028776] (-) TimerEvent: {}
+[42.134221] (-) TimerEvent: {}
+[42.243558] (-) TimerEvent: {}
+[42.406378] (-) TimerEvent: {}
+[42.527967] (-) TimerEvent: {}
+[42.653950] (-) TimerEvent: {}
+[42.765335] (-) TimerEvent: {}
+[42.869361] (-) TimerEvent: {}
+[42.984507] (-) TimerEvent: {}
+[43.086102] (-) TimerEvent: {}
+[43.192462] (-) TimerEvent: {}
+[43.313988] (-) TimerEvent: {}
+[43.415056] (-) TimerEvent: {}
+[43.530584] (-) TimerEvent: {}
+[43.648064] (-) TimerEvent: {}
+[43.767208] (-) TimerEvent: {}
+[43.890620] (-) TimerEvent: {}
+[44.009738] (-) TimerEvent: {}
+[44.130343] (-) TimerEvent: {}
+[44.252752] (-) TimerEvent: {}
+[44.365914] (-) TimerEvent: {}
+[44.479569] (-) TimerEvent: {}
+[44.585671] (-) TimerEvent: {}
+[44.715025] (-) TimerEvent: {}
+[44.822624] (-) TimerEvent: {}
+[44.933887] (-) TimerEvent: {}
+[45.035712] (-) TimerEvent: {}
+[45.141346] (-) TimerEvent: {}
+[45.514388] (-) TimerEvent: {}
+[45.637020] (-) TimerEvent: {}
+[45.755037] (-) TimerEvent: {}
+[45.861042] (-) TimerEvent: {}
+[45.978497] (-) TimerEvent: {}
+[46.103728] (-) TimerEvent: {}
+[46.232518] (-) TimerEvent: {}
+[46.339018] (-) TimerEvent: {}
+[46.454490] (-) TimerEvent: {}
+[46.561643] (-) TimerEvent: {}
+[46.719113] (-) TimerEvent: {}
+[46.821969] (-) TimerEvent: {}
+[46.923641] (-) TimerEvent: {}
+[47.049347] (-) TimerEvent: {}
+[47.200068] (-) TimerEvent: {}
+[47.337553] (-) TimerEvent: {}
+[47.449564] (-) TimerEvent: {}
+[47.566475] (-) TimerEvent: {}
+[47.674391] (-) TimerEvent: {}
+[47.781503] (-) TimerEvent: {}
+[47.920106] (-) TimerEvent: {}
+[48.027824] (-) TimerEvent: {}
+[48.172851] (-) TimerEvent: {}
+[48.317781] (-) TimerEvent: {}
+[48.424855] (-) TimerEvent: {}
+[48.583991] (-) TimerEvent: {}
+[48.694398] (-) TimerEvent: {}
+[48.855107] (-) TimerEvent: {}
+[48.976313] (-) TimerEvent: {}
+[49.205267] (-) TimerEvent: {}
+[49.376866] (-) TimerEvent: {}
+[49.500155] (-) TimerEvent: {}
+[49.692278] (-) TimerEvent: {}
+[49.815353] (-) TimerEvent: {}
+[49.947742] (-) TimerEvent: {}
+[50.072136] (-) TimerEvent: {}
+[50.217634] (-) TimerEvent: {}
+[50.330989] (-) TimerEvent: {}
+[50.460360] (-) TimerEvent: {}
+[50.634629] (-) TimerEvent: {}
+[50.798265] (-) TimerEvent: {}
+[50.913895] (-) TimerEvent: {}
+[51.033410] (-) TimerEvent: {}
+[51.155334] (-) TimerEvent: {}
+[51.275880] (-) TimerEvent: {}
+[51.407957] (-) TimerEvent: {}
+[51.509976] (-) TimerEvent: {}
+[51.635978] (-) TimerEvent: {}
+[51.744951] (-) TimerEvent: {}
+[51.857083] (-) TimerEvent: {}
+[51.966203] (-) TimerEvent: {}
+[52.111403] (-) TimerEvent: {}
+[52.219056] (-) TimerEvent: {}
+[52.332422] (-) TimerEvent: {}
+[52.433651] (-) TimerEvent: {}
+[52.551502] (-) TimerEvent: {}
+[52.660788] (-) TimerEvent: {}
+[52.762070] (-) TimerEvent: {}
+[52.874382] (-) TimerEvent: {}
+[52.978793] (-) TimerEvent: {}
+[53.080992] (-) TimerEvent: {}
+[53.207647] (-) TimerEvent: {}
+[53.313890] (-) TimerEvent: {}
+[53.675438] (-) TimerEvent: {}
+[53.782497] (-) TimerEvent: {}
+[53.893399] (-) TimerEvent: {}
+[54.003199] (-) TimerEvent: {}
+[54.150301] (-) TimerEvent: {}
+[54.265824] (-) TimerEvent: {}
+[54.398257] (-) TimerEvent: {}
+[54.499315] (-) TimerEvent: {}
+[54.600150] (-) TimerEvent: {}
+[54.700864] (-) TimerEvent: {}
+[54.808119] (-) TimerEvent: {}
+[54.919848] (-) TimerEvent: {}
+[55.023111] (-) TimerEvent: {}
+[55.130754] (-) TimerEvent: {}
+[55.245131] (-) TimerEvent: {}
+[55.404972] (-) TimerEvent: {}
+[55.540835] (-) TimerEvent: {}
+[55.683658] (-) TimerEvent: {}
+[55.809275] (-) TimerEvent: {}
+[55.917694] (-) TimerEvent: {}
+[56.029989] (-) TimerEvent: {}
+[56.141497] (-) TimerEvent: {}
+[56.294949] (-) TimerEvent: {}
+[56.396474] (-) TimerEvent: {}
+[56.498333] (-) TimerEvent: {}
+[56.655899] (-) TimerEvent: {}
+[57.013574] (-) TimerEvent: {}
+[57.146667] (-) TimerEvent: {}
+[57.259165] (-) TimerEvent: {}
+[57.375295] (-) TimerEvent: {}
+[57.491047] (-) TimerEvent: {}
+[57.595647] (-) TimerEvent: {}
+[57.715859] (-) TimerEvent: {}
+[57.884038] (-) TimerEvent: {}
+[57.997081] (-) TimerEvent: {}
+[58.098528] (-) TimerEvent: {}
+[58.199783] (-) TimerEvent: {}
+[58.375843] (-) TimerEvent: {}
+[58.486433] (-) TimerEvent: {}
+[58.592025] (-) TimerEvent: {}
+[58.787503] (-) TimerEvent: {}
+[58.891729] (-) TimerEvent: {}
+[59.017065] (-) TimerEvent: {}
+[59.130440] (-) TimerEvent: {}
+[59.274286] (-) TimerEvent: {}
+[59.388919] (-) TimerEvent: {}
+[59.500421] (-) TimerEvent: {}
+[59.658691] (-) TimerEvent: {}
+[59.774164] (-) TimerEvent: {}
+[59.919881] (-) TimerEvent: {}
+[60.033141] (-) TimerEvent: {}
+[60.165138] (-) TimerEvent: {}
+[60.276980] (-) TimerEvent: {}
+[60.379977] (-) TimerEvent: {}
+[60.488330] (-) TimerEvent: {}
+[60.599542] (-) TimerEvent: {}
+[60.729249] (-) TimerEvent: {}
+[60.832911] (-) TimerEvent: {}
+[60.944671] (-) TimerEvent: {}
+[61.049892] (-) TimerEvent: {}
+[61.171223] (-) TimerEvent: {}
+[61.286935] (-) TimerEvent: {}
+[61.398574] (-) TimerEvent: {}
+[61.505581] (-) TimerEvent: {}
+[61.629146] (-) TimerEvent: {}
+[61.755447] (-) TimerEvent: {}
+[61.914146] (-) TimerEvent: {}
+[62.018197] (-) TimerEvent: {}
+[62.132303] (-) TimerEvent: {}
+[62.269432] (-) TimerEvent: {}
+[62.371181] (-) TimerEvent: {}
+[62.490691] (-) TimerEvent: {}
+[62.618531] (-) TimerEvent: {}
+[62.727077] (-) TimerEvent: {}
+[62.834014] (-) TimerEvent: {}
+[62.952483] (-) TimerEvent: {}
+[63.081192] (-) TimerEvent: {}
+[63.186857] (-) TimerEvent: {}
+[63.307095] (-) TimerEvent: {}
+[63.436159] (-) TimerEvent: {}
+[63.560011] (-) TimerEvent: {}
+[63.685117] (-) TimerEvent: {}
+[63.808982] (-) TimerEvent: {}
+[63.914728] (-) TimerEvent: {}
+[64.025148] (-) TimerEvent: {}
+[64.154261] (-) TimerEvent: {}
+[64.283548] (-) TimerEvent: {}
+[64.386161] (-) TimerEvent: {}
+[64.490421] (-) TimerEvent: {}
+[64.600077] (-) TimerEvent: {}
+[64.727391] (-) TimerEvent: {}
+[64.879160] (-) TimerEvent: {}
+[64.982435] (-) TimerEvent: {}
+[65.177469] (-) TimerEvent: {}
+[65.291517] (-) TimerEvent: {}
+[65.411420] (-) TimerEvent: {}
+[65.537094] (-) TimerEvent: {}
+[65.701238] (-) TimerEvent: {}
+[65.821588] (-) TimerEvent: {}
+[65.964865] (-) TimerEvent: {}
+[66.087320] (-) TimerEvent: {}
+[66.215471] (-) TimerEvent: {}
+[66.327296] (-) TimerEvent: {}
+[66.431324] (-) TimerEvent: {}
+[66.550223] (-) TimerEvent: {}
+[66.669502] (-) TimerEvent: {}
+[66.771071] (-) TimerEvent: {}
+[66.872936] (-) TimerEvent: {}
+[66.993408] (-) TimerEvent: {}
+[67.101567] (-) TimerEvent: {}
+[67.202977] (-) TimerEvent: {}
+[67.317669] (-) TimerEvent: {}
+[67.433806] (-) TimerEvent: {}
+[67.542090] (-) TimerEvent: {}
+[67.671234] (-) TimerEvent: {}
+[67.780422] (-) TimerEvent: {}
+[67.921507] (-) TimerEvent: {}
+[68.101102] (-) TimerEvent: {}
+[68.214968] (-) TimerEvent: {}
+[68.352686] (-) TimerEvent: {}
+[68.526572] (-) TimerEvent: {}
+[68.630344] (-) TimerEvent: {}
+[68.738350] (-) TimerEvent: {}
+[68.848623] (-) TimerEvent: {}
+[68.970165] (-) TimerEvent: {}
+[69.078168] (-) TimerEvent: {}
+[69.187178] (-) TimerEvent: {}
+[69.290037] (-) TimerEvent: {}
+[69.407424] (-) TimerEvent: {}
+[69.509705] (-) TimerEvent: {}
+[69.618215] (-) TimerEvent: {}
+[69.725652] (-) TimerEvent: {}
+[69.846050] (-) TimerEvent: {}
+[69.950206] (-) TimerEvent: {}
+[70.195145] (-) TimerEvent: {}
+[70.297168] (-) TimerEvent: {}
+[70.526618] (-) TimerEvent: {}
+[70.631206] (-) TimerEvent: {}
+[70.846207] (-) TimerEvent: {}
+[70.953507] (-) TimerEvent: {}
+[71.077032] (-) TimerEvent: {}
+[71.195285] (-) TimerEvent: {}
+[71.304685] (-) TimerEvent: {}
+[71.412472] (-) TimerEvent: {}
+[71.551045] (-) TimerEvent: {}
+[71.967392] (-) TimerEvent: {}
+[72.114926] (-) TimerEvent: {}
+[72.219306] (-) TimerEvent: {}
+[72.344768] (-) TimerEvent: {}
+[72.465146] (-) TimerEvent: {}
+[72.575042] (-) TimerEvent: {}
+[72.679924] (-) TimerEvent: {}
+[72.789486] (-) TimerEvent: {}
+[73.198605] (-) TimerEvent: {}
+[73.324359] (-) TimerEvent: {}
+[73.831211] (-) TimerEvent: {}
+[74.198404] (-) TimerEvent: {}
+[74.319273] (-) TimerEvent: {}
+[74.466900] (-) TimerEvent: {}
+[74.591668] (-) TimerEvent: {}
+[74.701560] (-) TimerEvent: {}
+[75.159880] (-) TimerEvent: {}
+[75.273887] (-) TimerEvent: {}
+[75.388773] (-) TimerEvent: {}
+[75.490631] (-) TimerEvent: {}
+[75.602726] (-) TimerEvent: {}
+[75.730518] (-) TimerEvent: {}
+[75.862956] (-) TimerEvent: {}
+[75.966127] (-) TimerEvent: {}
+[76.075134] (-) TimerEvent: {}
+[76.188050] (-) TimerEvent: {}
+[76.290368] (-) TimerEvent: {}
+[76.394204] (-) TimerEvent: {}
+[76.499406] (-) TimerEvent: {}
+[76.622443] (-) TimerEvent: {}
+[76.730773] (-) TimerEvent: {}
+[76.853564] (-) TimerEvent: {}
+[76.955103] (-) TimerEvent: {}
+[77.077410] (-) TimerEvent: {}
+[77.228476] (-) TimerEvent: {}
+[77.391396] (-) TimerEvent: {}
+[77.499133] (-) TimerEvent: {}
+[77.605771] (-) TimerEvent: {}
+[77.927074] (-) TimerEvent: {}
+[78.056423] (-) TimerEvent: {}
+[78.173829] (-) TimerEvent: {}
+[78.297776] (-) TimerEvent: {}
+[78.407583] (-) TimerEvent: {}
+[78.823244] (-) TimerEvent: {}
+[78.937971] (-) TimerEvent: {}
+[79.043318] (-) TimerEvent: {}
+[79.149377] (-) TimerEvent: {}
+[79.251072] (-) TimerEvent: {}
+[79.383622] (-) TimerEvent: {}
+[79.507339] (-) TimerEvent: {}
+[79.618403] (-) TimerEvent: {}
+[79.732779] (-) TimerEvent: {}
+[79.851634] (-) TimerEvent: {}
+[79.974093] (-) TimerEvent: {}
+[80.104146] (-) TimerEvent: {}
+[80.253085] (-) TimerEvent: {}
+[80.401655] (-) TimerEvent: {}
+[80.511168] (-) TimerEvent: {}
+[80.643420] (-) TimerEvent: {}
+[80.760058] (-) TimerEvent: {}
+[81.198292] (-) TimerEvent: {}
+[81.304958] (-) TimerEvent: {}
+[81.431665] (-) TimerEvent: {}
+[81.558517] (-) TimerEvent: {}
+[81.673706] (-) TimerEvent: {}
+[81.781886] (-) TimerEvent: {}
+[81.883263] (-) TimerEvent: {}
+[81.993177] (-) TimerEvent: {}
+[82.017910] (arduinobot_cpp_examples) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple_subscriber\x1b[0m\n'}
+[82.094212] (-) TimerEvent: {}
+[82.196661] (-) TimerEvent: {}
+[82.310314] (-) TimerEvent: {}
+[82.440791] (-) TimerEvent: {}
+[82.551413] (-) TimerEvent: {}
+[82.661634] (-) TimerEvent: {}
+[82.770618] (-) TimerEvent: {}
+[82.873872] (-) TimerEvent: {}
+[83.009054] (-) TimerEvent: {}
+[83.111863] (-) TimerEvent: {}
+[83.215500] (-) TimerEvent: {}
+[83.350086] (-) TimerEvent: {}
+[83.521490] (-) TimerEvent: {}
+[83.691120] (-) TimerEvent: {}
+[83.798614] (-) TimerEvent: {}
+[83.925297] (-) TimerEvent: {}
+[84.040870] (-) TimerEvent: {}
+[84.161035] (-) TimerEvent: {}
+[84.283338] (-) TimerEvent: {}
+[84.412130] (-) TimerEvent: {}
+[84.604851] (-) TimerEvent: {}
+[84.772084] (-) TimerEvent: {}
+[84.893451] (-) TimerEvent: {}
+[85.014857] (-) TimerEvent: {}
+[85.127591] (-) TimerEvent: {}
+[85.237293] (-) TimerEvent: {}
+[85.341621] (-) TimerEvent: {}
+[85.454159] (-) TimerEvent: {}
+[85.556677] (-) TimerEvent: {}
+[85.672465] (-) TimerEvent: {}
+[85.803717] (-) TimerEvent: {}
+[85.907276] (-) TimerEvent: {}
+[86.008888] (-) TimerEvent: {}
+[86.116992] (-) TimerEvent: {}
+[86.224001] (arduinobot_cpp_examples) StdoutLine: {'line': b'[100%] Built target simple_subscriber\n'}
+[86.224422] (-) TimerEvent: {}
+[86.326906] (-) TimerEvent: {}
+[86.429458] (arduinobot_cpp_examples) CommandEnded: {'returncode': 0}
+[86.431345] (-) TimerEvent: {}
+[86.431500] (arduinobot_cpp_examples) JobProgress: {'identifier': 'arduinobot_cpp_examples', 'progress': 'install'}
+[86.431545] (arduinobot_cpp_examples) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples'], 'cwd': '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aldo', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/aldo', 'OLDPWD': '/home/aldo/arduinobot_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3642', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aldo/arduinobot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'aldo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aldo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/aldo-VirtualBox:@/tmp/.ICE-unix/3469,unix/aldo-VirtualBox:/tmp/.ICE-unix/3469', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/77bf08ea_688a_486b_8e67_938736b9ae35', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.J4DSD3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.144', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[86.533486] (-) TimerEvent: {}
+[86.647291] (-) TimerEvent: {}
+[86.651279] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[86.651715] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_publisher\n'}
+[86.655951] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber\n'}
+[86.671860] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/lib/arduinobot_cpp_examples/simple_subscriber" to ""\n'}
+[86.697944] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/package_run_dependencies/arduinobot_cpp_examples\n'}
+[86.698181] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/parent_prefix_path/arduinobot_cpp_examples\n'}
+[86.698334] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.sh\n'}
+[86.698452] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/ament_prefix_path.dsv\n'}
+[86.698547] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.sh\n'}
+[86.698639] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/environment/path.dsv\n'}
+[86.698745] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.bash\n'}
+[86.721547] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.sh\n'}
+[86.721671] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.zsh\n'}
+[86.721766] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/local_setup.dsv\n'}
+[86.721854] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Installing: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.dsv\n'}
+[86.721941] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/ament_index/resource_index/packages/arduinobot_cpp_examples\n'}
+[86.722028] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig.cmake\n'}
+[86.722114] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/cmake/arduinobot_cpp_examplesConfig-version.cmake\n'}
+[86.722204] (arduinobot_cpp_examples) StdoutLine: {'line': b'-- Up-to-date: /home/aldo/arduinobot_ws/install/arduinobot_cpp_examples/share/arduinobot_cpp_examples/package.xml\n'}
+[86.766571] (-) TimerEvent: {}
+[86.870254] (arduinobot_cpp_examples) CommandEnded: {'returncode': 0}
+[86.903118] (-) TimerEvent: {}
+[87.078722] (-) TimerEvent: {}
+[87.189414] (-) TimerEvent: {}
+[87.311694] (arduinobot_cpp_examples) JobEnded: {'identifier': 'arduinobot_cpp_examples', 'rc': 0}
+[87.342571] (-) TimerEvent: {}
+[87.342724] (-) EventReactorShutdown: {}

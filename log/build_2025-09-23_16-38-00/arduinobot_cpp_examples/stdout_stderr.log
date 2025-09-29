@@ -1,0 +1,27 @@
+[ 33%] Built target simple_subscriber
+[ 66%] Built target simple_publisher
+[ 83%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
+[01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In constructor ‘[01m[KSimpleParameter::[01;32m[KSimpleParameter[m[K()[m[K’:
+[01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:17:99:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr rclcpp::Node::[01;32m[Kadd_on_set_parameters_callback[m[K(OnSetParametersCallbackType)[m[K’, declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+   17 |         add_on_set_parameters_callback(std::bind(&SimpleParameter::paramChangeCallback, this, _1))[01;35m[K;[m[K
+      |                                                                                                   [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1159:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1159 |   [01;36m[Kadd_on_set_parameters_callback[m[K(OnSetParametersCallbackType callback);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:43:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kauto[m[K’
+   43 |     rclcpp::init(argc, argv)
+      |                             [01;31m[K^[m[K
+      |                             [32m[K;[m[K
+   44 |     [32m[Kauto[m[K node = std::make_shared<SimpleParameter>();
+      |     [32m[K~~~~[m[K                     
+[01m[K/home/aldo/arduinobot_ws/src/arduinobot_cpp_examples/src/simple_parameter.cpp:45:18:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   45 |     rclcpp::spin([01;31m[Knode[m[K);
+      |                  [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_parameter.dir/build.make:76: CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/simple_parameter.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
