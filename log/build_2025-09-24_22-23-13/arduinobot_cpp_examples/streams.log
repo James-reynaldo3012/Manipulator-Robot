@@ -1,6 +1,0 @@
-[0.270s] Invoking command in '/home/aldo/arduinobot_ws/build/arduinobot_cpp_examples': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aldo/arduinobot_ws/build/arduinobot_cpp_examples -- -j4 -l4
-[2.563s] [ 33%] Built target simple_subscriber
-[2.564s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_parameter.dir/src/simple_parameter.cpp.o[0m
-[2.567s] [ 83%] Built target simple_publisher
-[20.268s] [100%] [32m[1mLinking CXX executable simple_parameter[0m
-[22.673s] [100%] Built target simple_parameter

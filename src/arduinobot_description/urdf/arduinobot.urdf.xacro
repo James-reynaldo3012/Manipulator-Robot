@@ -3,12 +3,18 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
 
+    <xacro:arg name="is_ignition" default="true"/>
+
+    <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_gazebo.xacro"/>
+    <xacro:include filename="$(find arduinobot_description)/urdf/arduinobot_ros2_control.xacro"/>
+
     <xacro:property name="PI" value="3.14159"/>
     <xacro:property name="effort" value="30.0"/>
     <xacro:property name="velocity" value="10.0"/>
 
     <xacro:macro name="default_inertial" params="mass">
         <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
             <mass value="${mass}"/>
             <inertia ixx="1.0" ixy="0.0" ixz="0.0"
                      iyy="1.0" iyz="0.0"
@@ -28,6 +34,7 @@
             </geometry>
         </visual>
         <collision>
+            <origin xyz="-0.5 -0.5 0" rpy="0 0 0"/>
             <geometry>
                 <mesh filename="package://arduinobot_description/meshes/basement.STL" scale="0.01 0.01 0.01"/>
             </geometry>
@@ -190,20 +197,53 @@
     </joint>
 
     <link name="rgb_Camera">
-
+        <xacro:default_inertial mass="0.01"/>
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="-0.084814 0.12645 0.13661" rpy="-${PI/2} 0 -${PI/2}"/>
             <geometry>
                 <mesh filename="package://arduinobot_description/meshes/pi_camera.STL" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
-
+        <collision>
+            <origin xyz="-0.04 0.5 -0.1" rpy="0 0 -${PI/2}"/>
+            <geometry>
+                <mesh filename="package://arduinobot_description/meshes/pi_camera.STL" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
     </link>
 
+ 
     <joint name="rgb_camera_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rgb_Camera"/>
         <origin xyz="0 0.45 0.2" rpy="0 -0.5 ${PI/2}"/>
     </joint>
 
+    <gazebo reference="rgb_Camera">
+        <sensor name="camera" type="camera">
+            <update_rate>30</update_rate>
+            <always_on>true</always_on>
+            <visualize>true</visualize>
+            <topic>/image_raw</topic>
+            <gz_frame_id>rgb_Camera</gz_frame_id>
+            <camera name="camera">
+                <horizontal_fov>1.21126</horizontal_fov>
+                <image>
+                    <width>2304</width>
+                    <height>1296</height>
+                </image>
+                <distortion>
+                    <k1>0.0</k1>
+                    <k2>0.0</k2>
+                    <k3>0.0</k3>
+                    <p1>0.0</p1>
+                    <p2>0.0</p2>
+                    <center>0.5 0.5</center>
+                </distortion>
+            </camera>
+        </sensor>
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
 </robot>
